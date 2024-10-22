@@ -192,3 +192,17 @@ a {
 .enviar-bt:active {
     top: 1px;
 }
+
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 10px;
+    z-index: 100;
+}
+
+.btn-wsp:hover {
+    filter: grayscale(50%);
+}
