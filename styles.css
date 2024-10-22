@@ -1,16 +1,20 @@
 * {
-    font-family: Roboto, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 5px;
 
 }
 
 header {
-    font-family: Roboto, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     background: linear-gradient(to right, #ffe4c4, #faa237);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: auto;
+}
+
+.titulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 nav {
@@ -22,13 +26,21 @@ nav ul {
     margin-left: 20px;
 }
 
+main {
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#f7ac4555, #f7ac45);
+}
+
+
+
 #logo {
     width: 100px;
     height: 100px;
 }
 
 footer {
-    font-family: Roboto, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     background-color: bisque;
 }
 
@@ -40,4 +52,143 @@ ul {
 a {
     text-decoration: none;
     color: black;
+}
+
+#presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#presentacion p {
+    text-align: center;
+}
+
+.card {
+    margin: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#publicidad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#publicidad video {
+    border-radius: 30px;
+    width: 300px;
+}
+
+
+#instagramIcon {
+    width: 30px;
+    height: 30px;
+}
+
+#redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacto label {
+    display: block;
+}
+
+#contacto button {
+    display: block;
+    text-align: center;
+    margin: 5px;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.form-control {
+    background-color: #f2f6f8;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+
+    &:thick {
+        height: 3.3rem;
+        padding: .5rem 3.5rem;
+    }
+
+    &:focus {
+        background-color: #f2f6f8;
+        border: none;
+        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+    }
+}
+
+.enviar-bt {
+    position: relative;
+    background-color: rgb(236, 150, 52);
+    border-radius: 4em;
+    font-size: 16px;
+    color: white;
+    padding: 0.8em 1.8em;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+}
+
+.enviar-bt:hover {
+    transition-duration: 0.1s;
+    background-color: #3A3A3A;
+}
+
+.enviar-bt:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+}
+
+.enviar-bt:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.enviar-bt:active {
+    top: 1px;
 }
