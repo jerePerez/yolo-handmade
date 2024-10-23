@@ -7,9 +7,11 @@
 
 header {
     font-family: 'Quicksand', sans-serif;
-    background: linear-gradient(to right, #ffe4c4, #faa237);
+    background: linear-gradient(to right, #eec494, #ffa200);
     height: auto;
 }
+
+
 
 .titulo {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -17,14 +19,7 @@ header {
     font-weight: bold;
 }
 
-nav {
-    display: flex;
-}
 
-nav ul {
-    display: flex;
-    margin-left: 20px;
-}
 
 main {
     background-color: #e5e5f7;
