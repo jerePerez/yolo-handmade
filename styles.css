@@ -1,13 +1,13 @@
 * {
-    font-family: 'Quicksand', sans-serif;
+    font-family: Kanit, sans-serif;
     margin: 0;
-    padding: 5px;
+    padding: 0;
 
 }
 
 header {
-    font-family: 'Quicksand', sans-serif;
-    background: linear-gradient(to right, #eec494, #ffa200);
+    font-family: Kanit, sans-serif;
+    background: #89ad9f;
     height: auto;
 }
 
@@ -22,9 +22,8 @@ header {
 
 
 main {
-    background-color: #e5e5f7;
+    background-color: #d5d3bf;
     opacity: 1;
-    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#f7ac4555, #f7ac45);
 }
 
 
@@ -61,7 +60,7 @@ a {
 }
 
 .card {
-    margin: 10px;
+    margin-top: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -71,10 +70,20 @@ a {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn-personal {
+    background-color: #ec756f;
+}
+
 #publicidad {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 30px;
 }
 
 #publicidad video {
@@ -84,12 +93,14 @@ a {
 
 
 #instagramIcon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
 }
 
 #redes {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -100,6 +111,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 40px;
 }
 
 #contacto label {
@@ -140,7 +152,7 @@ a {
 
 .enviar-bt {
     position: relative;
-    background-color: rgb(236, 150, 52);
+    background-color: #ec756f;
     border-radius: 4em;
     font-size: 16px;
     color: white;
