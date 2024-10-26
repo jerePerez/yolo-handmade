@@ -59,6 +59,11 @@ a {
     text-align: center;
 }
 
+.cardCont {
+    display: flex;
+    justify-content: center;
+}
+
 .card {
     margin-top: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -90,6 +95,70 @@ a {
     border-radius: 30px;
     width: 300px;
 }
+
+#resenias {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+}
+
+#resenias h2 {
+    text-align: center;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+#resenias figure {
+    justify-self: center;
+}
+
+@media (max-width: 768px) {
+    #resenias {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.opinion {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 310px;
+    max-height: 310px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 50%;
+
+}
+
+
+.opinion img {
+    max-width: 100%;
+    vertical-align: top;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.opinion img:hover {
+    opacity: 0.3;
+}
+
+.opinion figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(40%);
+}
+
 
 
 #instagramIcon {
