@@ -5,20 +5,65 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
-    font-family: Kanit, sans-serif;
-    background: #89ad9f;
-    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 85px;
+    background-color: #89ad9f;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 0 5px;
 }
 
-
-
-.titulo {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
 }
 
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav ul li {
+    flex: auto;
+    padding: 10px;
+    align-items: center;
+}
+
+.nav-link {
+    color: black;
+}
+
+.navegador {
+    justify-self: center;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
 
 
 main {
@@ -27,26 +72,13 @@ main {
 }
 
 
-
-#logo {
-    width: 100px;
-    height: 100px;
-}
-
 footer {
     font-family: 'Quicksand', sans-serif;
     background-color: bisque;
 }
 
-ul {
-    list-style: none;
-    text-decoration: none;
-}
 
-a {
-    text-decoration: none;
-    color: black;
-}
+
 
 #presentacion {
     display: flex;
@@ -59,29 +91,52 @@ a {
     text-align: center;
 }
 
-.cardCont {
+.card-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 60px;
 }
 
 .card {
-    margin-top: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 325px;
+    background-color: #f4f4f4;
+    border-radius: 50% 50% 10px 10px;
+    box-shadow: 0px 2px 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
 }
 
 .card img {
     width: 100%;
+    height: 300px;
     object-fit: cover;
 }
 
-.btn-personal {
+.card-content {
+    display: grid;
+    place-items: center;
+    padding-bottom: 10px;
+    background-color: #99adbf;
+}
+
+.card-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-button {
+    display: inline-block;
     background-color: #ec756f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 #publicidad {
@@ -96,24 +151,24 @@ a {
     width: 300px;
 }
 
-#resenias {
+#reseñas {
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: space-evenly;
 }
 
-#resenias h2 {
+#reseñas h2 {
     text-align: center;
     padding: 20px;
     padding-top: 50px;
 }
 
-#resenias figure {
+#reseñas figure {
     justify-self: center;
 }
 
 @media (max-width: 768px) {
-    #resenias {
+    #reseñas {
         grid-template-columns: 1fr;
         justify-content: center;
         align-items: center;
