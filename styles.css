@@ -106,6 +106,11 @@ footer {
     box-shadow: 0px 2px 10px;
     overflow: hidden;
     transition: transform 0.2s ease;
+    view-timeline-name: --reveal;
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
 }
 
 .card:hover {
@@ -190,7 +195,11 @@ footer {
     text-align: center;
     font-size: 16px;
     border-radius: 50%;
-
+    view-timeline-name: --reveal;
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
 }
 
 
@@ -344,4 +353,17 @@ footer {
 
 .btn-wsp:hover {
     filter: grayscale(50%);
+}
+
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 10%
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
 }
